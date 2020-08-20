@@ -22,4 +22,12 @@ export class PostListItemComponent implements OnInit {
       return 'red';
     }
   }
+
+  increment() {
+    this.postLove += 1;
+  }
+
+  decrement() {
+    this.postLove -= 1;
+  }
 }
