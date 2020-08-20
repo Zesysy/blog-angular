@@ -1,10 +1,15 @@
 <li
   [ngClass]="{
     'list-group-item': true,
-    'list-group-item-success': postLove >= 0,
+    'list-group-item-success': postLove > 0,
     'list-group-item-danger': postLove < 0
   }"
 >
-  <h4 [ngStyle]="{ color: getColor() }">{{ postTitle }} -- {{ postDate }}</h4>
+  <span class="float-right" style="color: gray; font-style: italic;">{{
+    postDate | date: "y/MM/d, h:mm a"
+  }}</span>
+  <h4 [ngStyle]="{ color: getColor() }">
+    {{ postTitle }}
+  </h4>
   <p>{{ postContent }}</p>
 </li>
