@@ -11,12 +11,10 @@ import { PostListComponent } from './post-list/post-list.component';
     AppComponent,
     NavbarComponent,
     PostListItemComponent,
-    PostListComponent
+    PostListComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

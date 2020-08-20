@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-post-list-item',
   templateUrl: './post-list-item.component.html',
-  styleUrls: ['./post-list-item.component.scss']
+  styleUrls: ['./post-list-item.component.scss'],
 })
 export class PostListItemComponent implements OnInit {
+  @Input() postTitle: string;
+  @Input() postLove: number;
+  @Input() postContent: string;
+  @Input() postDate: Date;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
